@@ -8,6 +8,13 @@ function puter() {
   let darkMode = document.querySelector(".wrapper");
   darkMode.classList.toggle("darkmode");
 
-  let gravity = document.querySelector("div.box1");
-  gravity.classList.toggle("gravity");
+  let gravityDownLeft = document.querySelectorAll(".boxes__left > .box");
+  for (let i = 0; i < gravityDownLeft.length; i++) {
+    gravityDownLeft[i].style.animation = "gravitydown 5s linear infinite";
+  }
+
+  let gravityDownRight = document.querySelectorAll(".boxes__right > .box");
+  for (let i = 0; i < gravityDownRight.length; i++) {
+    gravityDownRight[i].style.animation = "gravityup 5s linear infinite";
+  }
 }

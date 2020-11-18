@@ -74,18 +74,48 @@ a:hover {
   background: linear-gradient(90deg, #924c31, #0d324b);
 }
 
-.box1 div {
+.boxes__left > div {
   position: fixed;
   width: 40px;
   height: 40px;
   border: 3px;
   border-radius: 6px;
-  background-color: transparent;
+  background-color: white;
   border-style: solid;
   border-image: linear-gradient(90deg, #0f2027, #203a43, #1c3742) 2;
 }
 
-.box2 div {
+.boxes__left div:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  animation: animateup 10s linear infinite;
+}
+
+.boxes__left div:nth-child(2) {
+  top: 60%;
+  left: 25%;
+  animation: animateup 8s linear infinite;
+}
+
+.boxes__left div:nth-child(3) {
+  top: 78%;
+  left: 4%;
+  animation: animateup 7s linear infinite;
+}
+
+.boxes__left div:nth-child(4) {
+  top: 6%;
+  left: 37%;
+  animation: animateup 9s linear infinite;
+}
+
+.boxes__left div:nth-child(5) {
+  top: 80%;
+  left: 35%;
+  animation: animateup 9s linear infinite;
+}
+
+.boxes__right > div {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -95,65 +125,35 @@ a:hover {
   border-style: solid;
 }
 
-.box1 div:nth-child(1) {
-  top: 20%;
-  left: 10%;
-  animation: animateup 10s linear infinite;
-}
-
-.box1 div:nth-child(2) {
-  top: 60%;
-  left: 25%;
-  animation: animateup 8s linear infinite;
-}
-
-.box1 div:nth-child(3) {
-  top: 78%;
-  left: 4%;
-  animation: animateup 7s linear infinite;
-}
-
-.box1 div:nth-child(4) {
-  top: 6%;
-  left: 37%;
-  animation: animateup 9s linear infinite;
-}
-
-.box1 div:nth-child(5) {
-  top: 80%;
-  left: 35%;
-  animation: animateup 9s linear infinite;
-}
-
-.box2 div:nth-child(1) {
+.boxes__right div:nth-child(1) {
   top: 60%;
   left: 80%;
   animation: animatedown 5s linear infinite;
   border-image: linear-gradient(90deg, #b92b27, #1565c0) 2;
 }
 
-.box2 div:nth-child(2) {
+.boxes__right div:nth-child(2) {
   top: 86%;
   left: 95%;
   animation: animatedown 12s linear infinite;
   border-image: linear-gradient(90deg, #924c31, #1565c0) 2;
 }
 
-.box2 div:nth-child(3) {
+.boxes__right div:nth-child(3) {
   top: 17%;
   left: 75%;
   animation: animatedown 6s linear infinite;
   border-image: linear-gradient(90deg, #924c31, #1565c0) 2;
 }
 
-.box2 div:nth-child(4) {
+.boxes__right div:nth-child(4) {
   top: 43%;
   left: 60%;
   animation: animatedown 9s linear infinite;
   border-image: linear-gradient(90deg, #b92b27, #1565c0) 2;
 }
 
-.box2 div:nth-child(5) {
+.boxes__right div:nth-child(5) {
   top: 76%;
   left: 55%;
   animation: animatedown 5s linear infinite;
@@ -220,10 +220,6 @@ img:hover {
   text-align: right;
 }
 
-.gravity {
-  animation-direction: reverse;
-}
-
 .darkmode {
   background: black;
   transition-duration: 2s;
@@ -255,7 +251,6 @@ img:hover {
 
 @keyframes animateup {
   0% {
-    transform: scale(0) translateY(0) rotate(0);
     opacity: 1;
   }
 
@@ -278,7 +273,7 @@ img:hover {
 }
 
 @media screen and (min-width: 240px) and (max-width: 900px) {
-   .perkenalan {
+  .perkenalan {
     margin-left: 36px;
     margin-bottom: 30px;
   }
