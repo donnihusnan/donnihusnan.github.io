@@ -44,7 +44,7 @@ export default function Home() {
               </h2>
             </header>
 
-            <section className="mb-6 md:mb-8">
+            <section>
               <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
                 I'm having keen interest in creating efficient solutions. My
                 journey in web development has equipped me with a diverse skill
@@ -54,10 +54,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 p-6 flex flex-col justify-center">
-          <div className="flex-grow mx-auto">
-            <IconCloud iconSlugs={slugs} />
-          </div>
+        <div className="w-full md:w-1/2 mb-3 p-6 flex flex-col flex-grow mx-auto justify-center">
+          <IconCloud iconSlugs={slugs} />
         </div>
       </main>
 
