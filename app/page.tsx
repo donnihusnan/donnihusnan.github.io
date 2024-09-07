@@ -62,7 +62,7 @@ export default function Home() {
       <footer className="py-4 text-center">
         <div className="mb-2">
           <a
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/donni-husnan-00366b1ab/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mr-4 text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
@@ -70,7 +70,7 @@ export default function Home() {
             <Linkedin size={24} />
           </a>
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/donnihusnan"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white"
