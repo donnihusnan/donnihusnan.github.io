@@ -12,7 +12,6 @@ const slugs = [
   'css3',
   'nodedotjs',
   'nextdotjs',
-  'amazonaws',
   'firebase',
   'vercel',
   'git',
