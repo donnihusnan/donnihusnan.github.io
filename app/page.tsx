@@ -10,17 +10,21 @@ const slugs = [
   'react',
   'html5',
   'css3',
+  'npm',
   'nodedotjs',
   'nextdotjs',
+  'figma',
   'firebase',
   'vercel',
+  'netlify',
   'git',
+  'fontawesome',
   'github',
-  'visualstudiocode',
   'tailwindcss',
   'bootstrap',
   'basecamp',
   'vuedotjs',
+  'vite',
 ];
 
 export default function Home() {
